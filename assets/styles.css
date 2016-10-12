@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  /* to prevent selection */
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  cursor:default;
+}
+
+::selection {
+  background: #ff7979;
+  color: white;
+}
+/*cursor css*/
+.cursor-brush{
+  cursor:crosshair;
+}
+.cursor-draggable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+ /*  Apply a "closed-hand" cursor during drag operation. */
+.cursor-draggable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.cursor-zoomin{
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.cursor-zoomout{
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+.cubeRow{
+  white-space:nowrap;
+}
+.cube{
+  background:rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  border: 1px solid rgba(220, 220, 220, 1);
+  box-shadow: 2px 5px 5px rgba(212, 212, 212, 1);
+  display: inline-block;
+  width:50px;
+  height:50px;
+  margin:5px;
+}
+
+.btn{
+  background: #50bfff;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  outline:0;
+  padding:0 16px;
+  cursor:pointer;
+  height: 32px;
+}
+/*cubes css*/
+.bgPurple{
+  background: rgb(128, 52, 200);
+}
+.bgYellow{
+  background: rgb(255, 222, 62);
+}
+.bgOrange{
+  background: rgb(253, 89, 42);
+}
+.bgGreen{
+  background: rgb(103,253,49);
+}
+.bgRed {
+  background: rgb(253,49,81);
+}
+.bgWhite{
+  background: #fff;
+}
+.bgBlack{
+  background: #000;
+}
+.bgLightBlue{
+  background:#50bfff;
+}
+.bgDarkBlue{
+  background: rgb(44, 39, 255);
+}
+.bgBrown{
+  background:rgb(167, 55, 0);
+}
+.bgPink{
+  background: rgb(255, 18, 147);
+}
+.bgRandom:after{
+  content:"R";
+  text-align:center;
+}
+/*ng2share css*/
+@media (max-width:1100px){
+  .n2s-shareText-secondary{
+    display:none;
+  }
+}
+@media (max-width:600px){
+  .n2s-share-btn-more{
+    display:none!important;
+  }
+  .n2s-shareText{
+    display:none;
+  }
+  .n2s-share-btn-with-text{
+    padding: 0 7px 0 7px!important;
+  }
+}
